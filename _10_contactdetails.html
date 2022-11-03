@@ -1,0 +1,465 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <style>
+        * {
+            padding: 0%;
+            margin: 0%;
+            max-width: 100%;
+        }
+
+        header {
+            width: 100%;
+            height: auto;
+        }
+
+        .one img {
+            display: none;
+        }
+
+        .two img {
+            display: none;
+           
+        }
+        
+        .nav {
+            background-color: #1A3156;
+        }
+
+        .nav li {
+            display: inline-block;
+            list-style-type: none;
+            margin: 6px 3px;
+        }
+
+        .nav li a {
+            color: white;
+            text-decoration: none;
+            text-align: center;
+            font-size: large;
+            padding: 10px;
+        }
+
+        .nav li a:hover {
+            color: gold;
+        }
+        hr:after {
+    content: "";
+    display: block;
+    border-bottom: 2px solid #6708d3;
+    max-width: 20%;
+        }
+
+        /* body {
+            background-image: url("p1.avif");
+            background-repeat: no-repeat;
+            background-size: 100%;
+        }
+*/
+        .image {
+            position: relative;
+            text-align: center;
+
+        }
+
+        .abc {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+
+        .image h {
+            text-align: center;
+            display: block;
+            color: white;
+            font-weight: bold;
+            padding: 10px;
+        }
+
+        .image1 {
+            font-size: 30px;
+        }
+
+        .image2 {
+            font-size: 40px;
+        }
+
+        .image3 {
+            font-size: 30px;
+        }
+
+        .inf h {
+            font-size: xx-large;
+            font-weight: bold;
+            margin-top: 1cm;
+            padding: 15px;
+            color: rgb(60, 21, 131);
+        }
+
+        .inf p {
+            font-size: x-large;
+            margin: 15px;
+            margin-top: 0.75cm;
+        }
+
+        .clg {
+            padding: 15px;
+            display: grid;
+            grid-template-columns: 70% 30%;
+            margin-top: 40px;
+            background-color: #1A3156;
+        }
+
+        .clg h {
+            font-size: xx-large;
+            font-weight: bold;
+            color: rgb(39, 14, 97);
+        }
+
+        .clg p {
+            margin-top: 15px;
+            font-size: large;
+            color: white;
+        }
+
+        .topic {
+            height: 100px;
+            background-image: linear-gradient(to right, #614385, #516395);
+            text-align: center;
+
+        }
+
+        .topic h {
+            position: relative;
+            top: 1cm;
+            font-size: xx-large;
+            font-weight: bold;
+            color: white;
+        }
+
+        .inf h {
+            font-size: xx-large;
+            font-weight: bold;
+            margin-top: 1cm;
+            padding: 15px;
+            color: rgb(50, 15, 83);
+        }
+
+        .inf p {
+            font-size: x-large;
+            margin: 15px;
+            margin-top: 0.5cm;
+        }
+
+        .inf ul {
+            margin: 35px;
+        }
+
+        .inf li {
+            font-size: x-large;
+        }
+
+        #customers {
+            font-family: Arial, Helvetica, sans-serif;
+            border-collapse: collapse;
+            width: 50%;
+            position: relative;
+            left: 350px;
+            top: 25px;
+        }
+
+        #customers td,
+        #customers th {
+            border: 1px solid #ddd;
+            padding: 8px;
+        }
+
+        #customers tr:nth-child(even) {
+            background-color: #f2f2f2;
+        }
+
+        #customers tr:hover {
+            background-color: #ddd;
+        }
+
+        #customers th {
+            padding-top: 12px;
+            padding-bottom: 12px;
+            text-align: left;
+            background-color: #1A3156;
+            color: white;
+        }
+
+        .burger {
+            font-size: larger;
+            color: white;
+            padding: 0px 15px;
+            display: none;
+        }
+
+        .bottom {
+            display: grid;
+            grid-template-columns: 25% 50% 25%;
+            background-color: #1A3156;
+            padding-top: 50px;
+        }
+
+        .foot h,
+        .cont h,
+        .reach h {
+            color: rgb(247, 243, 243);
+            font-size: xx-large;
+            margin: 10px;
+            font-weight: bold;
+        }
+
+        .foot {
+            background-color: #1A3156;
+        }
+
+        .foot ul,
+        .cont ul {
+            padding: 10px;
+            margin-top: 1cm;
+        }
+
+        .foot ul li,
+        .cont ul li {
+            display: block;
+            margin: 5px;
+        }
+
+        .foot li a,
+        .cont li {
+            text-decoration: none;
+            color: white;
+            font-size: large;
+        }
+
+        .end {
+            font-size: larger;
+            font-weight: 900;
+            color: gray;
+            background-color: #1A3156;
+            padding: 5px 5px 25px 5px;
+            text-align: center;
+        }
+
+        @media only screen and (max-width: 427px) {
+            .inf h {
+                font-size: x-large;
+                font-weight: bold;
+            }
+
+            .inf p {
+                font-size: large;
+            }
+
+            #customers {
+                position: relative;
+                left: 50px;
+                width: 75%;
+            }
+
+            .nav li {
+                display: grid;
+            }
+
+            .nav li a {
+                font-size: medium;
+            }
+
+            .nav ul {
+                padding: 5px;
+            }
+
+            .one img {
+                display: block;
+            }
+
+            .burger {
+                display: block;
+                background-color: #1A3156;
+                padding: 5px;
+            }
+
+            .bottom {
+                display: block;
+            }
+        }
+
+        @media only screen and (min-width: 427px) {
+            .two img {
+                display: block;
+                
+            }
+            .two{
+                display: flex;
+            align-items: center;
+            justify-content: center;
+            }
+        }
+        .cont,.foot{
+            padding: 0px 25px;
+        }
+    </style>
+</head>
+
+<body>
+    <header class="one">
+        <img src="mobile.jpg" alt="">
+    </header>
+    <header class="two">
+        <img src="logo.png" alt="">
+    </header>
+    <div class="nav">
+        <div id="show" class="burger">
+            <i class="fa fa-bars"></i>
+        </div>
+
+        <form id="form">
+            <li><a href="index.html">HOME</a></li>
+            <li><a href="_2_about.html">ABOUT</a></li>
+            <li><a href="_3_committee.html">COMMITTEE</a></li>
+            <li><a href="_4_conference.html">PROGRAMME SCHEDULE</a></li>
+            <li><a href="_5_importantdates.html">IMPORTANT DATES</a></li>
+            <li><a href="">CALL FOR PAPERS</a></li>
+            <li><a href="_7_registrationfee.html">REGISTRATION</a></li>
+            <li><a href="">SPEAKERS</a></li>
+            <li><a href="">DOWNLOADS</a></li>
+            <li><a href="_10_contactdetails.html">CONTACT US</a></li>
+
+        </form>
+    </div>
+    <div class="topic">
+        <h>Contact Us</h>
+    </div>
+
+
+    <!-- Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias, sit deserunt! Necessitatibus commodi quaerat
+    culpa amet eos possimus explicabo rerum quidem tenetur, dignissimos id aliquid, mollitia recusandae incidunt sunt
+    eveniet ipsum dolor ipsa, aperiam aliquam asperiores a dolore nulla voluptatibus. Illo ab voluptatem reprehenderit,
+    earum architecto dolor facilis distinctio porro iusto recusandae eveniet sunt unde tenetur voluptatum magnam vitae
+    iure enim assumenda laborum culpa ex laboriosam et. Perferendis minima exercitationem porro beatae commodi sed
+    eaque? Nostrum dolorem officiis ab rerum magnam tempore, eius pariatur porro corrupti repudiandae enim commodi
+    dignissimos officia saepe eum blanditiis accusantium cupiditate repellendus modi architecto nihil.
+    -->
+    <!--      ************************STOP***********************************        -->
+
+    <div class="inf">
+        <br><br>
+        <h>Contact Us</h><br><br>
+        <hr>
+        <p>Convener ICACI-2023
+        <p>Department of Information Technology
+        <p>MVSR Engineering College, Nadergul
+        <p>Hyderabad 501510
+        <p>Email:
+        <p>Contact No:
+        <p>Web: icaci-2023.org
+    </div>
+
+
+
+    <!--      ************************STOP***********************************        -->
+    <!-- Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias, sit deserunt! Necessitatibus commodi quaerat
+    culpa amet eos possimus explicabo rerum quidem tenetur, dignissimos id aliquid, mollitia recusandae incidunt sunt
+    eveniet ipsum dolor ipsa, aperiam aliquam asperiores a dolore nulla voluptatibus. Illo ab voluptatem reprehenderit,
+    earum architecto dolor facilis distinctio porro iusto recusandae eveniet sunt unde tenetur voluptatum magnam vitae
+    iure enim assumenda laborum culpa ex laboriosam et. Perferendis minima exercitationem porro beatae commodi sed
+    eaque? Nostrum dolorem officiis ab rerum magnam tempore, eius pariatur porro corrupti repudiandae enim commodi
+    dignissimos officia saepe eum blanditiis accusantium cupiditate repellendus modi architecto nihil.
+    -->
+
+
+
+    <div class="bottom">
+        <div class="foot">
+            <h>Important Links</h>
+            <ul>
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="_2_about.html">ABOUT</a></li>
+                <li><a href="_3_committee.html">COMMITTEE</a></li>
+                <li><a href="_4_conference.html">PROGRAMME SCHEDULE</a></li>
+                <li><a href="_5_importantdates.html">IMPORTANT DATES</a></li>
+                <li><a href="">CALL FOR PAPERS</a></li>
+                <li><a href="_7_registrationfee.html">REGISTRATION</a></li>
+                <li><a href="">SPEAKERS</a></li>
+                <li><a href="">DOWNLOADS</a></li>
+                <li><a href="_10_contactdetails.html">CONTACT US</a></li>
+            </ul>
+        </div>
+        <div class="reach">
+            <h>Reach us</h>
+
+            <div class="mapouter">
+                <div class="gmap_canvas" style="margin: 1cm 10px 1cm 10px;"><iframe class="gmap_iframe" frameborder="0"
+                        scrolling="no" marginheight="0" marginwidth="0"
+                        src="https://maps.google.com/maps?width=300&amp;height=400&amp;hl=en&amp;q=mvsr&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"></iframe><a
+                        href="https://piratebay-proxys.com/">Pirate proxy</a></div>
+                <style>
+                    .mapouter {
+                        position: relative;
+                        text-align: right;
+                        width: 600px;
+                        height: 400px;
+                    }
+
+                    .gmap_canvas {
+                        overflow: hidden;
+                        background: none !important;
+                        width: 600px;
+                        height: 400px;
+                    }
+
+                    .gmap_iframe {
+                        width: 600px !important;
+                        height: 400px !important;
+                    }
+                </style>
+            </div>
+            <br><br>
+        </div>
+        <div class="cont">
+            <h>Contact us</h>
+            <ul>
+                <li>Convener ICACI-2023
+                <li>Department of Information Technology
+                <li>MVSR Engineering College, Nadergul
+                <li>Hyderabad 501510
+                <li>Email:
+                <li>Contact No:
+                <li>Web: icaci-2023.org
+            </ul>
+        </div>
+
+    </div>
+    <p class="end">© International Conference on Advances
+        in Computational Intelligence (ICACI) - 2022. All Rights Reserved</p>
+
+    <script>
+        document.getElementById("show").onclick = function () {
+            abc()
+        }
+        function abc() {
+            let show = document.getElementById("form");
+            if (show.style.display != "none") {
+                show.style.display = "none";
+
+            }
+            else {
+                show.style.display = "block";
+            }
+        }
+    </script>
+</body>
+
+</html>
